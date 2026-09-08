@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KisanSeva Admin</title>
+    <link rel="stylesheet" href="static/admin.css">
+</head>
+<body>
+    <h1>Admin Home</h1>
+
+    <section class="queue-section">
+        <p>Today: <strong id="todayLabel"></strong></p>
+        <div class="queue-layout">
+            <article class="selected-slot">
+                <h2>Viewing token <span id="selectedToken">--</span></h2>
+                <div id="selectedBooking">
+                    <p>Select a token to view its details.</p>
+                </div>
+            </article>
+
+            <article class="token-list-panel">
+                <h2>Today's tokens</h2>
+                <label>Show time slot
+                    <select id="timeFilter">
+                        <option value="">All time slots</option>
+                        <option>9:00 AM - 12:00 PM</option>
+                        <option>12:00 PM - 3:00 PM</option>
+                        <option>3:00 PM - 6:00 PM</option>
+                    </select>
+                </label>
+                <div id="tokenList"></div>
+            </article>
+        </div>
+    </section>
+
+    <p id="settingsMessage"></p>
+    <a href="/">Sign Out</a>
+
+    <script src="js/admin-home.js"></script>
+</body>
+</html>

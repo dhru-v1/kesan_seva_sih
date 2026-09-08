@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Slot - KisanSeva</title>
+
+    <link rel="stylesheet" href="static/bookslot.css">
+</head>
+<body>
+
+<header>
+
+    <div class="logo">
+        🌾 KisanSeva
+    </div>
+
+    <div class="header-right">
+
+        <a href="home.html" class="home-link">
+            Home
+        </a>
+
+        <div class="language-switch">
+            <span id="english">English</span>
+            <span>|</span>
+            <span id="hindi">हिंदी</span>
+        </div>
+
+    </div>
+
+</header>
+
+<main>
+
+    <div class="booking-card">
+
+        <h1 id="pageTitle">Book Slot</h1>
+
+        <form id="bookingForm">
+
+            <select id="mandi" required>
+                <option value="" selected disabled>
+                    Select Mandi
+                </option>
+            </select>
+
+            <select id="category" required>
+                <option value="" selected disabled>
+                    Select Crop Category
+                </option>
+                <option>Food Grain</option>
+                <option>Cash Crop</option>
+                <option>Pulses</option>
+                <option>Oilseed</option>
+                <option>Vegetable</option>
+                <option>Fruit</option>
+            </select>
+
+            <input
+                id="cropName"
+                type="text"
+                placeholder="Crop Name"
+                required
+            >
+
+            <input
+                id="quantity"
+                type="number"
+                placeholder="Quantity"
+                min="0.001"
+                step="0.001"
+                required
+            >
+
+            <select id="quantityUnit" required>
+                <option value="kg">Kilograms (kg)</option>
+                <option value="g">Grams (g)</option>
+            </select>
+
+            <select id="date" required>
+                <option value="" selected disabled>
+                    Select Date
+                </option>
+            </select>
+
+            <select id="timeslot" required>
+                <option value="" selected disabled>
+                    Select Time Slot
+                </option>
+                <option>9:00 AM - 12:00 PM</option>
+                <option>12:00 PM - 3:00 PM</option>
+                <option>3:00 PM - 6:00 PM</option>
+            </select>
+
+            <button id="bookBtn" type="submit">
+                Book Slot
+            </button>
+
+        </form>
+
+    </div>
+
+</main>
+
+<script src="js/bookslot.js"></script>
+
+</body>
+</html>

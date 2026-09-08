@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KisanSeva</title>
+
+    <link rel="stylesheet" href="static/style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            🌾 KisanSeva
+        </div>
+
+        <div class="language-switch">
+            <span id="english">English</span>
+            <span>|</span>
+            <span id="hindi">हिंदी</span>
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="hero">
+
+            <h1 id="heroTitle">Smart Procurement Queue Management</h1>
+
+            <p id="heroText">
+                Helping Farmers Reduce Waiting Time
+                at Procurement Centres
+            </p>
+
+        </section>
+
+        <section class="login-card">
+
+            <!-- LOGIN -->
+
+            <div id="loginSection">
+
+                <h2 id="loginHeading">Farmer Login</h2>
+
+                <form id="loginForm">
+
+                    <input
+                        type="email"
+                        placeholder="Email Address"
+                        required
+                    >
+
+                    <input
+                        type="password"
+                        placeholder="Password"
+                        required
+                    >
+
+                    <button id="loginBtn" type="submit">
+                        Login
+                    </button>
+
+                </form>
+
+                <p class="register-text">
+                    <span id="newUserText">New User?</span>
+
+                    <a href="#" id="showRegister">
+                        Register Here
+                    </a>
+                </p>
+
+            </div>
+
+            <!-- REGISTER -->
+
+            <div id="registerSection" style="display:none;">
+
+                <h2 id="registerHeading">Farmer Registration</h2>
+
+                <form id="registerForm">
+
+                    <input
+                        type="text"
+                        placeholder="Full Name"
+                        required
+                    >
+
+                    <input
+                        type="email"
+                        placeholder="Email Address"
+                        required
+                    >
+
+                    <input
+                        type="password"
+                        placeholder="Password"
+                        required
+                    >
+
+                    <button id="registerBtn" type="submit">
+                        Register
+                    </button>
+
+                </form>
+
+                <p class="register-text">
+                    <span id="alreadyText">Already have an account?</span>
+
+                    <a href="#" id="showLogin">
+                        Login
+                    </a>
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>

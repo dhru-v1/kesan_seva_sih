@@ -1,0 +1,238 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#F5F7FA;
+    min-height:100vh;
+}
+
+/* HEADER */
+
+header{
+    background:#2E7D32;
+    color:white;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 50px;
+}
+
+.logo{
+    font-size:1.8rem;
+    font-weight:700;
+}
+
+.language-switch{
+    display:flex;
+    gap:12px;
+    cursor:pointer;
+}
+
+/* MAIN */
+
+main{
+    min-height: calc(100vh - 80px);
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    gap:20px;
+}
+
+/* MANDI */
+
+.mandi-select select{
+
+    padding:12px 20px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:white;
+
+    font-size:1rem;
+
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* TOKEN CARD */
+
+.token-card{
+    background:white;
+
+    width:550px;
+
+    border-radius:24px;
+
+    padding:60px 40px;
+
+    text-align:center;
+
+    box-shadow:0 15px 35px rgba(0,0,0,0.1);
+}
+
+.token-card h2{
+
+    color:#555;
+
+    margin-bottom:20px;
+
+    letter-spacing:2px;
+}
+
+.token-card h1{
+    font-size:8rem;
+    color:#2E7D32;
+    font-weight:700;
+}
+/* TOKEN INFO */
+
+.token-info{
+
+    width:450px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-top:20px;
+
+    font-size:1.1rem;
+}
+
+/* BUTTONS */
+
+.book-btn{
+
+    margin-top:35px;
+
+    width:250px;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#2E7D32;
+
+    color:white;
+
+    font-size:1rem;
+
+    font-weight:600;
+
+    cursor:pointer;
+}
+
+.book-btn:hover{
+
+    background:#1B5E20;
+}
+
+.logout-btn{
+
+    margin-top:15px;
+
+    background:none;
+
+    border:none;
+
+    color:#d32f2f;
+
+    font-size:1rem;
+
+    cursor:pointer;
+}
+
+.bookings-panel{
+    width:550px;
+    background:white;
+    border-radius:16px;
+    padding:22px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.bookings-panel h2{
+    color:#2E7D32;
+    margin-bottom:14px;
+}
+
+.booking-group{
+    margin-top:18px;
+}
+
+.booking-group h3{
+    margin:0;
+    padding:10px 12px;
+    border-radius:10px;
+    background:#f0f6f1;
+    color:#2E7D32;
+    font-size:1rem;
+}
+
+.booking-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:16px;
+    border-top:1px solid #e6e6e6;
+    padding:14px 0;
+}
+
+.booking-item div{
+    display:flex;
+    flex-direction:column;
+    gap:5px;
+}
+
+.booking-item span,
+.booking-item small{
+    color:#666;
+}
+
+.cancel-booking{
+    width:auto;
+    margin:0;
+    padding:8px 12px;
+    background:#d32f2f;
+    font-size:.85rem;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    header{
+        padding:15px 20px;
+    }
+
+    .token-card{
+        width:90%;
+    }
+
+    .token-info{
+        width:90%;
+        flex-direction:column;
+        gap:10px;
+        text-align:center;
+    }
+
+    .token-card h1{
+        font-size:4rem;
+    }
+}
+
+.booking-details strong{
+    color:#263238;
+}

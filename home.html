@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KisanSeva Dashboard</title>
+
+    <link rel="stylesheet" href="static/home.css">
+</head>
+<body>
+
+    <header>
+
+        <div class="logo">
+            🌾 KisanSeva
+        </div>
+
+        <div class="language-switch">
+            <span id="english">English</span>
+            <span>|</span>
+            <span id="hindi">हिंदी</span>
+        </div>
+
+    </header>
+
+    <main>
+
+        <div class="mandi-select">
+
+            <select id="mandi">
+            </select>
+
+        </div>
+
+        <div class="token-card">
+
+            <h2 id="tokenLabel">
+                CURRENT TOKEN
+            </h2>
+
+            <h1 id="currentToken">
+                01
+            </h1>
+
+        </div>
+
+        <div class="token-info">
+
+            <p>
+                <strong id="mandiLabel">
+                    Mandi :
+                </strong>
+
+                <span id="mandiName">
+                    Mandi 1
+                </span>
+            </p>
+
+            <p>
+                <strong id="yourTokenLabel">
+                    Your Token :
+                </strong>
+
+                <span id="yourToken">
+                    --
+                </span>
+            </p>
+
+        </div>
+
+        <button
+            class="book-btn"
+            id="bookBtn"
+        >
+            Book Slot
+        </button>
+
+        <section class="bookings-panel">
+            <h2>My bookings</h2>
+            <div id="bookingList"></div>
+        </section>
+
+        <button
+            class="logout-btn"
+            id="logoutBtn"
+        >
+            Sign Out
+        </button>
+
+    </main>
+
+    <script src="js/home.js"></script>
+
+</body>
+</html>
